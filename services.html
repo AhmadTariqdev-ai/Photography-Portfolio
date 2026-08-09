@@ -98,6 +98,19 @@
 		transform: rotate(360deg);
 	}
 }
+	/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-color);
+	border-radius: 4px;
+}
   /* ================= NAV ================= */
   nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;background:linear-gradient(180deg, rgba(11,10,8,0.92), transparent);}
   .nav-cta{font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid var(--line-strong);padding:10px 18px;border-radius:2px;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;}
