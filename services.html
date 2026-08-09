@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photography services</title>
+<title>Service section</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -15,17 +15,33 @@
     --gold:#f0a83a;
     --gold-deep:#b9791f;
     --cream:#f4efe6;
-    	--accent-color: #f39c12;
     --stone:#a39a8d;
     --stone-dim:#6f6860;
+	      --accent-color: #f39c12;
     --line: rgba(240,168,58,0.16);
     --line-strong: rgba(240,168,58,0.35);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{background:var(--void);color:var(--cream);font-family:'Manrope',sans-serif;overflow-x:hidden;}
-  ::selection{background:var(--gold);color:var(--void);}
-.logo {
+
+	::selection {
+	background-color: var(--accent-color);
+	color: var(--void);
+}  /* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-color);
+	border-radius: 4px;
+}
+	.logo {
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: -0.5px;
@@ -97,19 +113,6 @@
 	100% {
 		transform: rotate(360deg);
 	}
-}
-	/* Custom Scrollbar */
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background: var(--secondary-dark);
-}
-
-::-webkit-scrollbar-thumb {
-	background: var(--accent-color);
-	border-radius: 4px;
 }
   /* ================= NAV ================= */
   nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;background:linear-gradient(180deg, rgba(11,10,8,0.92), transparent);}
