@@ -25,10 +25,12 @@
   html{scroll-behavior:smooth;}
   body{background:var(--void);color:var(--cream);font-family:'Manrope',sans-serif;overflow-x:hidden;}
 
-	::selection {
-	background-color: var(--accent-color);
-	color: var(--void);
-}  /* Custom Scrollbar */
+::selection {
+  background-color: var(--accent-color);
+  color: var(--void);
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
 }
@@ -41,7 +43,11 @@
 	background: var(--accent-color);
 	border-radius: 4px;
 }
-	.logo {
+::selection {
+  background-color: var(--accent-color);
+  color: var(--void);
+}
+.logo {
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: -0.5px;
